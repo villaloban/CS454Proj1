@@ -1,0 +1,36 @@
+from dfa_L import build_dfa_L
+from counting import count_accepted
+
+def read_n():
+    while True:
+        s = input("Enter a number: (1-300): ")
+        if 1 <= int(s) <= 300:
+            return int(s)
+        print("Invalid input. Please enter a number between 1 and 300.")
+
+
+def main():
+    delta_L, accepting_L = build_dfa_L()
+
+    while True:
+        print()
+        print("1) Count strings of length n in L")
+        print("2) Count strings of length n in L' (middle two symbols aa)")
+        print("3) Exit")
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            n = read_n()
+            print(f"Number of strings of length {n} in L: {count_accepted(delta_L, accepting_L, n)}")
+        elif choice == "2":
+            n = read_n()
+            # Assuming L' is represented by a different DFA, you would need to build it here
+            # For now, we'll just use the same DFA for demonstration
+            # print(f"Number of strings of length {n} in L': {count_accepted(delta_L, accepting_L, n)}")
+            print("L' counting is not implemented yet.")
+        elif choice == "3":
+            break
+        else:
+            print("Invalid choice. Please enter 1, 2, or 3.")
+
+if __name__ == "__main__":
+    main()
