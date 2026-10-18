@@ -4,6 +4,7 @@ def crossed(left, right):
     k = len(left)
     for i in range(5):
         j = 4 - i
+        # check count is right
         if i <= k and j <= k:
             window = []
             for t in range(i):
@@ -20,6 +21,7 @@ def build_dfa_L2(delta_L):
     S = NUM_STATES_L
     FAIL = 1
 
+    #starting pair. both 'a'
     a = encode([0])
     start_code = a * S + a
 
@@ -58,6 +60,8 @@ def build_dfa_L2(delta_L):
                 if temp_p == FAIL_L or temp_q == FAIL_L:
                     row.append(FAIL)
                     continue
+
+                
                 if need_cross:
                     left = []
                     for t in range(1, len(left_buf)):
@@ -68,6 +72,7 @@ def build_dfa_L2(delta_L):
                     for t in range(1, len(right_buf)):
                         right.append(right_buf[t])
                     right.append(y)
+
                     if not crossed(left, right):
                         row.append(FAIL)
                         continue
@@ -76,6 +81,7 @@ def build_dfa_L2(delta_L):
                 if temp_code not in state_of:
                     state_of[temp_code] = len(codes)
                     codes.append(temp_code)
+                    
                 row.append(state_of[temp_code])
         delta.append(row)
         s += 1

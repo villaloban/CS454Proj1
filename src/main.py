@@ -3,6 +3,7 @@ from dfa_L2 import build_dfa_L2
 from counting import count_accepted
 
 def read_n():
+    # keep asking until user enters whole number 1-300
     while True:
         s = input("Enter a number: (1-300): ")
         if s.isdigit() and 1 <= int(s) <= 300:
@@ -11,6 +12,8 @@ def read_n():
 
 
 def main():
+
+    # build automata
     delta_L, accepting_L = build_dfa_L()
     delta_L2, accepting_L2 = build_dfa_L2(delta_L)
 
@@ -26,6 +29,7 @@ def main():
         elif choice == "2":
             n = read_n()
             if n % 2 == 1:
+                # odd len, no aa in middle possible
                 count = 0
             else:
                 count = count_accepted(delta_L2, accepting_L2, n // 2 - 1)
