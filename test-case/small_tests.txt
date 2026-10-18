@@ -1,0 +1,50 @@
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 2 in L': 1
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 4 in L': 16
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 6 in L': 60
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 7 in L': 0
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 10 in L': 942
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 12 in L': 15072
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 5 in L: 1024
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 6 in L: 1560
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: Enter a number: (1-300): Number of strings of length 7 in L: 4440
+
+1) Count strings of length n in L
+2) Count strings of length n in L' (middle two symbols aa)
+3) Exit
+Enter your choice: 
